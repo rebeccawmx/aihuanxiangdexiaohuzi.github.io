@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Moustache</title>
+  
+  <subtitle>学习弯道漂移的技巧！</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://hltsir.club/"/>
+  <updated>2018-02-05T07:06:55.709Z</updated>
+  <id>http://hltsir.club/</id>
+  
+  <author>
+    <name>Moustache</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://hltsir.club/2018/02/05/hello-world/"/>
+    <id>http://hltsir.club/2018/02/05/hello-world/</id>
+    <published>2018-02-05T07:06:55.709Z</published>
+    <updated>2018-02-05T07:06:55.709Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Disqus-blog</title>
+    <link href="http://hltsir.club/2018/01/22/Disqus-blog/"/>
+    <id>http://hltsir.club/2018/01/22/Disqus-blog/</id>
+    <published>2018-01-22T14:40:07.000Z</published>
+    <updated>2018-01-24T14:25:17.036Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>Disqus评论blog使用</strong></p><a id="more"></a><h1 id="Disqus评论blog使用"><a href="#Disqus评论blog使用" class="headerlink" title="Disqus评论blog使用"></a>Disqus评论blog使用</h1><p><em>友言不知道怎么就用不起了，换成Disqus,一下就可以了，开心^__^</em></p><ul><li>主题仍然使用的是<strong><a href="https://github.com/yscoder/hexo-theme-indigo/" target="_blank" rel="noopener">indigo</a></strong>,修改主题中的配置如下：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 是否开启 disqus</span><br><span class="line">disqus_shortname: hltsir</span><br></pre></td></tr></table></figure></li></ul><p>hltsir替换为自己的shortname,开启disqus时记得把其他评论设置为false</p><ul><li>disqus账户的注册配置参考下面的文章<br><strong>链接</strong>：<a href="https://www.jianshu.com/p/91c01f236846" target="_blank" rel="noopener">https://www.jianshu.com/p/91c01f236846</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;Disqus评论blog使用&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="blog" scheme="http://hltsir.club/categories/blog/"/>
+    
+    
+      <category term="disqus" scheme="http://hltsir.club/tags/disqus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown新打开页</title>
+    <link href="http://hltsir.club/2018/01/20/markdown%E9%93%BE%E6%8E%A5%E6%96%B0%E6%89%93%E5%BC%80%E9%A1%B5/"/>
+    <id>http://hltsir.club/2018/01/20/markdown链接新打开页/</id>
+    <published>2018-01-20T09:22:30.000Z</published>
+    <updated>2018-01-22T15:24:50.816Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>Markdown链接在新的窗口打开</strong></p><a id="more"></a><p><em>适用在markdown不需要渲染，需要链接在新窗口打开的妥协方法，markdown原生还没有适配的方法</em></p><ul><li>链接使用html方法如：</li></ul><p><code>&lt;a href=&quot;http://hltsir.club/&quot; target=&quot;_blank&quot;&gt;Blog&lt;/a&gt;</code> </p><ul><li>不知道为什么经过hexo渲染后在github上不适用，在码云上就适用，详情见我源码的<em>README</em>部分点击blog后查看跳转情况<br><i class="icon icon-hand-o-down icon-2x"></i>  </li><li><a href="https://github.com/aihuanxiangdexiaohuzi/aihuanxiangdexiaohuzi.github.io/" target="_blank">github</a></li><li><p><a href="https://gitee.com/hltsir/hltsir/" target="_blank">gitee</a></p></li><li><p>如果是经过hexo-indigo主题渲染会自动在一个新窗口打开，用markdown原生的方法就行</p></li></ul><p><code>[链接说明](url地址)</code> </p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;Markdown链接在新的窗口打开&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="blog" scheme="http://hltsir.club/categories/blog/"/>
+    
+    
+      <category term="Markdown 链接新窗口" scheme="http://hltsir.club/tags/Markdown-%E9%93%BE%E6%8E%A5%E6%96%B0%E7%AA%97%E5%8F%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>404页面的建立</title>
+    <link href="http://hltsir.club/2017/12/05/404%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%BB%BA%E7%AB%8B/"/>
+    <id>http://hltsir.club/2017/12/05/404页面的建立/</id>
+    <published>2017-12-05T12:54:36.000Z</published>
+    <updated>2018-02-05T08:36:12.937Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>404页面的建立</strong></p><a id="more"></a><p>我的404页面用的是腾讯<a href="http://www.qq.com/404/?&amp;callback=reg&amp;_=1512135765596" target="_blank" rel="noopener">公益404</a>,也推荐大家使用</p><p>步骤:<br>1.在source目录下建立一个404.html的网页。<br><img src="http://upload-images.jianshu.io/upload_images/7263391-7f0f873bb1ed5d75.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="404页面建立.png"></p><p>2.在404.html中加入代码我的如下<br><img src="http://upload-images.jianshu.io/upload_images/7263391-2332bddfc56d1ec0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="404页面代码.png"></p><p>如何测试？我是直接在我的blog的link中加入404页面的，我只要点击link就跳到404页面说明建立成功了^_^</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;404页面的建立&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="blog" scheme="http://hltsir.club/categories/blog/"/>
+    
+    
+      <category term="404page" scheme="http://hltsir.club/tags/404page/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>port-hexo-s</title>
+    <link href="http://hltsir.club/2017/12/01/port-hexo-s/"/>
+    <id>http://hltsir.club/2017/12/01/port-hexo-s/</id>
+    <published>2017-12-01T15:19:37.000Z</published>
+    <updated>2017-12-05T14:01:55.651Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>hexo端口占用，本地服务无法开启</strong></p><a id="more"></a><h2 id="端口占用本地显示无法查看"><a href="#端口占用本地显示无法查看" class="headerlink" title="端口占用本地显示无法查看"></a>端口占用本地显示无法查看</h2><p>hexo s 本地无法查看端口占用，安装了福昕阅读器的原因 默认占用4000端口</p><p>解决：</p><p><em>1.指定端口 hexo s -p xxxx</em> </p><p><em>2.关闭福昕阅读进程（不推荐）</em></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;hexo端口占用，本地服务无法开启&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="blog" scheme="http://hltsir.club/categories/blog/"/>
+    
+    
+      <category term="hexo" scheme="http://hltsir.club/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>windows-hexo</title>
+    <link href="http://hltsir.club/2017/09/04/windows-hexo/"/>
+    <id>http://hltsir.club/2017/09/04/windows-hexo/</id>
+    <published>2017-09-04T14:59:59.000Z</published>
+    <updated>2017-12-05T13:24:05.164Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>域名的建立</strong></p><a id="more"></a><h1 id="自定义域名的建立"><a href="#自定义域名的建立" class="headerlink" title="自定义域名的建立"></a>自定义域名的建立</h1><p>《1》ping username.github.io 来获得自己的blog IP  用于填写 dnspod 域名解析<br>利用 ping username.xxx  域名来 验证是否 相同</p><p>《2》解决 每次 更新文章后 github 上自定义 域名 被 重置<br>把 CNAME 和 README 文件放在source文件夹里 </p><h1 id="hexo-常用命令"><a href="#hexo-常用命令" class="headerlink" title="hexo 常用命令"></a>hexo 常用命令</h1><p>hexo new layout 创建blog文件<br>hexo clean 清除缓存<br>hexo g 生成文件<br>hexo d 部署到博客<br>hexo s 本地查看 默认 4000 端口<br>hexo s -p xxxx 本地查看指定端口</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;域名的建立&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="blog" scheme="http://hltsir.club/categories/blog/"/>
+    
+    
+      <category term="github hexo" scheme="http://hltsir.club/tags/github-hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux-game</title>
+    <link href="http://hltsir.club/2017/09/04/linux-game/"/>
+    <id>http://hltsir.club/2017/09/04/linux-game/</id>
+    <published>2017-09-04T14:58:26.000Z</published>
+    <updated>2017-12-05T13:18:35.028Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>Ubuntu下的小游戏</strong></p><a id="more"></a><h1 id="Ubuntu-下安装软件命令"><a href="#Ubuntu-下安装软件命令" class="headerlink" title="Ubuntu 下安装软件命令"></a>Ubuntu 下安装软件命令</h1><p>sudo apt-get update<br>sudo apt-get install xx(软件名)</p><p><1>.数字雨 cmatrix </1></p><p><2>.linux艺术字 banner ubuntu默认安装的是 printerbanner 可以使用-w命令来调整宽度 相似命令还有 totilet 和 figlet</2></p><p><3>.监督你的小眼睛 xeyes 使用nohup xeyes &amp; 命令可以在后台运行</3></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;Ubuntu下的小游戏&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://hltsir.club/categories/Linux/"/>
+    
+    
+      <category term="Ubuntu" scheme="http://hltsir.club/tags/Ubuntu/"/>
+    
+  </entry>
+  
+</feed>
