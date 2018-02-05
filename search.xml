@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F02%2F05%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Disqus-blog]]></title>
+    <url>%2F2018%2F01%2F22%2FDisqus-blog%2F</url>
+    <content type="text"><![CDATA[Disqus评论blog使用 Disqus评论blog使用友言不知道怎么就用不起了，换成Disqus,一下就可以了，开心^__^ 主题仍然使用的是indigo,修改主题中的配置如下：12# 是否开启 disqusdisqus_shortname: hltsir hltsir替换为自己的shortname,开启disqus时记得把其他评论设置为false disqus账户的注册配置参考下面的文章链接：https://www.jianshu.com/p/91c01f236846]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>disqus</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown新打开页]]></title>
+    <url>%2F2018%2F01%2F20%2Fmarkdown%E9%93%BE%E6%8E%A5%E6%96%B0%E6%89%93%E5%BC%80%E9%A1%B5%2F</url>
+    <content type="text"><![CDATA[Markdown链接在新的窗口打开 适用在markdown不需要渲染，需要链接在新窗口打开的妥协方法，markdown原生还没有适配的方法 链接使用html方法如： &lt;a href=&quot;http://hltsir.club/&quot; target=&quot;_blank&quot;&gt;Blog&lt;/a&gt; 不知道为什么经过hexo渲染后在github上不适用，在码云上就适用，详情见我源码的README部分点击blog后查看跳转情况 github gitee 如果是经过hexo-indigo主题渲染会自动在一个新窗口打开，用markdown原生的方法就行 [链接说明](url地址)]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>Markdown 链接新窗口</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[404页面的建立]]></title>
+    <url>%2F2017%2F12%2F05%2F404%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%BB%BA%E7%AB%8B%2F</url>
+    <content type="text"><![CDATA[404页面的建立 我的404页面用的是腾讯公益404,也推荐大家使用 步骤:1.在source目录下建立一个404.html的网页。 2.在404.html中加入代码我的如下 如何测试？我是直接在我的blog的link中加入404页面的，我只要点击link就跳到404页面说明建立成功了^_^]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>404page</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[port-hexo-s]]></title>
+    <url>%2F2017%2F12%2F01%2Fport-hexo-s%2F</url>
+    <content type="text"><![CDATA[hexo端口占用，本地服务无法开启 端口占用本地显示无法查看hexo s 本地无法查看端口占用，安装了福昕阅读器的原因 默认占用4000端口 解决： 1.指定端口 hexo s -p xxxx 2.关闭福昕阅读进程（不推荐）]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[windows-hexo]]></title>
+    <url>%2F2017%2F09%2F04%2Fwindows-hexo%2F</url>
+    <content type="text"><![CDATA[域名的建立 自定义域名的建立《1》ping username.github.io 来获得自己的blog IP 用于填写 dnspod 域名解析利用 ping username.xxx 域名来 验证是否 相同 《2》解决 每次 更新文章后 github 上自定义 域名 被 重置把 CNAME 和 README 文件放在source文件夹里 hexo 常用命令hexo new layout 创建blog文件hexo clean 清除缓存hexo g 生成文件hexo d 部署到博客hexo s 本地查看 默认 4000 端口hexo s -p xxxx 本地查看指定端口]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>github hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[linux-game]]></title>
+    <url>%2F2017%2F09%2F04%2Flinux-game%2F</url>
+    <content type="text"><![CDATA[Ubuntu下的小游戏 Ubuntu 下安装软件命令sudo apt-get updatesudo apt-get install xx(软件名) .数字雨 cmatrix .linux艺术字 banner ubuntu默认安装的是 printerbanner 可以使用-w命令来调整宽度 相似命令还有 totilet 和 figlet .监督你的小眼睛 xeyes 使用nohup xeyes &amp; 命令可以在后台运行]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Ubuntu</tag>
+      </tags>
+  </entry>
+</search>
