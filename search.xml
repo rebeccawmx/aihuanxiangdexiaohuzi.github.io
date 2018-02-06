@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2018%2F02%2F05%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[Disqus-blog]]></title>
     <url>%2F2018%2F01%2F22%2FDisqus-blog%2F</url>
     <content type="text"><![CDATA[Disqus评论blog使用 Disqus评论blog使用友言不知道怎么就用不起了，换成Disqus,一下就可以了，开心^__^ 主题仍然使用的是indigo,修改主题中的配置如下：12# 是否开启 disqusdisqus_shortname: hltsir hltsir替换为自己的shortname,开启disqus时记得把其他评论设置为false disqus账户的注册配置参考下面的文章链接：https://www.jianshu.com/p/91c01f236846]]></content>
