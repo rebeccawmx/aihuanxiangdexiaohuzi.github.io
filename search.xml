@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[VNC-Link]]></title>
+    <url>%2F2018%2F03%2F19%2FVNC-Link%2F</url>
+    <content type="text"><![CDATA[导读树莓派入门到放弃之远程连接(remote-link)”]]></content>
+      <categories>
+        <category>树莓派(Paspberrypi)</category>
+      </categories>
+      <tags>
+        <tag>remote-links,VNC</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[win10临时wifi设置]]></title>
     <url>%2F2018%2F02%2F14%2Fwin10%E4%B8%B4%E6%97%B6wifi%E8%AE%BE%E7%BD%AE%2F</url>
     <content type="text"><![CDATA[导读 过年回老家没有网络(宽带)手机录制了一些视频，本想通过局域网上传的，始终没有找到方法.偶然找到一篇设置临时wifi的方法，成功通过ftp上传了视频(貌似直接用数据线更方便) 工具 电脑一台 手机一部 app ES文件浏览器 步骤 参考:win10临时网络设置 为了方便可以新建一个文件，写入两行命令，保存为bat文件，以后要使用时直接右键用管理员权限运行一次即可。 手机连接设置好的网络 打开ES文件浏览器，找到左侧的网络下的远程管理器点击打开 在电脑浏览器内输入ES文件浏览器内的ftp地址，即可访问手机。 PS:用手机软件录制的视频最好放置在video目录下便于查找]]></content>
