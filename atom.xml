@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://hltsir.club/"/>
-  <updated>2018-03-21T13:57:01.116Z</updated>
+  <updated>2018-03-21T15:33:31.442Z</updated>
   <id>http://hltsir.club/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://hltsir.club/2018/03/19/Raspberrypi%E5%85%A5%E9%97%A8%E5%88%B0%E6%94%BE%E5%BC%83%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%AF%B4%E6%98%8E/"/>
     <id>http://hltsir.club/2018/03/19/Raspberrypi入门到放弃系列学习之说明/</id>
     <published>2018-03-19T14:41:12.000Z</published>
-    <updated>2018-03-21T13:57:01.116Z</updated>
+    <updated>2018-03-21T15:33:31.442Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="导读"><a href="#导读" class="headerlink" title="导读"></a><font color="red"><em>导读</em></font></h3><p><strong><font color="green">食用树莓派(Raspberrypi)入门到放弃索引表</font></strong></p><a id="more"></a><h4 id="这是索引表，迷路者的救赎"><a href="#这是索引表，迷路者的救赎" class="headerlink" title="这是索引表，迷路者的救赎"></a><font color="red" size="4">这是索引表，迷路者的救赎</font></h4><h4 id="这是索引表，迷路者的救赎-1"><a href="#这是索引表，迷路者的救赎-1" class="headerlink" title="这是索引表，迷路者的救赎"></a><font color="red" size="4">这是索引表，迷路者的救赎</font></h4><h4 id="这是索引表，迷路者的救赎-2"><a href="#这是索引表，迷路者的救赎-2" class="headerlink" title="这是索引表，迷路者的救赎"></a><font color="red" size="4">这是索引表，迷路者的救赎</font></h4><p><strong><font color="red " size="3">重要的事情说三遍？？？</font></strong></p><h3 id="链接-树莓派官网"><a href="#链接-树莓派官网" class="headerlink" title="链接: 树莓派官网"></a>链接: <a href="https://www.raspberrypi.org/" target="_blank" rel="noopener">树莓派官网</a></h3><ul><li><a href="https://www.raspberrypi.org/forums/" target="_blank" rel="noopener">官方论坛</a></li><li><a href="http://shumeipai.nxez.com/" target="_blank" rel="noopener">树莓派实验室</a></li><li><a href="http://www.shumeipai.net/portal.php" target="_blank" rel="noopener">树莓派论坛</a></li><li><a href="https://www.oschina.net/p/raspberrypi" target="_blank" rel="noopener">开源中国社区</a></li></ul><h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a><font color="red " size="4">说明</font></h3><blockquote><p><em>爱瞎折腾有错吗？？？树莓派入门到放弃学习总结，在此记录个人的学习心得，走过的一些坑，给广大的兴趣爱好者提供一丢丢没有那么专业的解答233</em></p></blockquote><h3 id="硬件平台"><a href="#硬件平台" class="headerlink" title="硬件平台"></a><font color="blue">硬件平台</font></h3><h4 id="必备："><a href="#必备：" class="headerlink" title="必备："></a>必备：</h4><ul><li>Raspberry pi 3 B+</li><li>5V 2.5A DC</li><li>TF卡</li></ul><h4 id="可选："><a href="#可选：" class="headerlink" title="可选："></a>可选：</h4><ul><li></li><li></li></ul><h3 id="软件平台"><a href="#软件平台" class="headerlink" title="软件平台"></a><font color="blue">软件平台</font></h3><ul><li>Raspberry pi官方系统 <a href="https://www.raspberrypi.org/downloads/raspbian/" target="_blank" rel="noopener"><strong>RASPBIAN</strong></a></li><li>vnc，putty 用于远程连接</li></ul><h3 id="索引表-迷途的羔羊"><a href="#索引表-迷途的羔羊" class="headerlink" title="索引表(迷途的羔羊)"></a><font color="red " size="5">索引表(<font color="red" size="3">迷途的羔羊)</font></font></h3><ul><li>可查看右侧文章目录导航<h4 id="Raspberry-pi-3B-入手-amp-拆箱-amp-安装系统"><a href="#Raspberry-pi-3B-入手-amp-拆箱-amp-安装系统" class="headerlink" title="Raspberry pi 3B+ 入手&amp;拆箱&amp;安装系统 "></a><a href="">Raspberry pi 3B+ 入手&amp;拆箱&amp;安装系统 </a></h4><h4 id="Raspberry-pi-配置"><a href="#Raspberry-pi-配置" class="headerlink" title="Raspberry pi 配置"></a><a href="">Raspberry pi 配置</a></h4><h4 id=""><a href="#" class="headerlink" title=""></a><a href=""></a></h4></li></ul>]]></content>
+    <content type="html"><![CDATA[<h3 id="导读"><a href="#导读" class="headerlink" title="导读"></a><font color="red"><em>导读</em></font></h3><p><strong><font color="green">食用树莓派(Raspberrypi)入门到放弃索引表</font></strong></p><a id="more"></a><h4 id="这是索引表，迷路者的救赎"><a href="#这是索引表，迷路者的救赎" class="headerlink" title="这是索引表，迷路者的救赎"></a><font color="red" size="4">这是索引表，迷路者的救赎</font></h4><h4 id="这是索引表，迷路者的救赎-1"><a href="#这是索引表，迷路者的救赎-1" class="headerlink" title="这是索引表，迷路者的救赎"></a><font color="red" size="4">这是索引表，迷路者的救赎</font></h4><h4 id="这是索引表，迷路者的救赎-2"><a href="#这是索引表，迷路者的救赎-2" class="headerlink" title="这是索引表，迷路者的救赎"></a><font color="red" size="4">这是索引表，迷路者的救赎</font></h4><p><strong><font color="red " size="3">重要的事情说三遍？？？</font></strong></p><h3 id="链接-树莓派官网"><a href="#链接-树莓派官网" class="headerlink" title="链接: 树莓派官网"></a>链接: <a href="https://www.raspberrypi.org/" target="_blank" rel="noopener">树莓派官网</a></h3><ul><li><a href="https://www.raspberrypi.org/forums/" target="_blank" rel="noopener">官方论坛</a></li><li><a href="http://shumeipai.nxez.com/" target="_blank" rel="noopener">树莓派实验室</a></li><li><a href="http://www.shumeipai.net/portal.php" target="_blank" rel="noopener">树莓派论坛</a></li><li><a href="https://www.oschina.net/p/raspberrypi" target="_blank" rel="noopener">开源中国社区</a></li></ul><h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a><font color="red " size="4">说明</font></h3><blockquote><p><em>爱瞎折腾有错吗？？？树莓派入门到放弃学习总结，在此记录个人的学习心得，走过的一些坑，给广大的兴趣爱好者提供一丢丢没有那么专业的解答233</em></p></blockquote><h3 id="硬件平台"><a href="#硬件平台" class="headerlink" title="硬件平台"></a><font color="blue">硬件平台</font></h3><h4 id="必备："><a href="#必备：" class="headerlink" title="必备："></a>必备：</h4><ul><li>Raspberry pi 3 B+</li><li>5V 2.5A DC</li><li>TF卡</li></ul><h4 id="可选："><a href="#可选：" class="headerlink" title="可选："></a>可选：</h4><ul><li></li><li></li></ul><h3 id="软件平台"><a href="#软件平台" class="headerlink" title="软件平台"></a><font color="blue">软件平台</font></h3><ul><li>Raspberry pi官方系统 <a href="https://www.raspberrypi.org/downloads/raspbian/" target="_blank" rel="noopener"><strong>RASPBIAN</strong></a></li><li><a href="https://www.realvnc.com/en/" target="_blank" rel="noopener">VNC</a>，<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" target="_blank" rel="noopener">PuTTy</a> 用于远程连接</li></ul><h3 id="索引表-迷途的羔羊"><a href="#索引表-迷途的羔羊" class="headerlink" title="索引表(迷途的羔羊)"></a><font color="red " size="5">索引表(<font color="red" size="3">迷途的羔羊)</font></font></h3><ul><li>可查看右侧文章目录导航<h4 id="Raspberry-pi-3B-入手-amp-拆箱-amp-安装系统"><a href="#Raspberry-pi-3B-入手-amp-拆箱-amp-安装系统" class="headerlink" title="Raspberry pi 3B+ 入手&amp;拆箱&amp;安装系统 "></a><a href="">Raspberry pi 3B+ 入手&amp;拆箱&amp;安装系统 </a></h4><h4 id="Raspberry-pi-配置"><a href="#Raspberry-pi-配置" class="headerlink" title="Raspberry pi 配置"></a><a href="">Raspberry pi 配置</a></h4><h4 id=""><a href="#" class="headerlink" title=""></a><a href=""></a></h4></li></ul>]]></content>
     
     <summary type="html">
     
@@ -43,7 +43,7 @@
     <link href="http://hltsir.club/2018/03/19/VNC-Link/"/>
     <id>http://hltsir.club/2018/03/19/VNC-Link/</id>
     <published>2018-03-19T14:26:32.000Z</published>
-    <updated>2018-03-20T12:43:14.787Z</updated>
+    <updated>2018-03-21T15:24:11.680Z</updated>
     
     <content type="html"><![CDATA[<h3 id="导读"><a href="#导读" class="headerlink" title="导读"></a><font color="red"><em>导读</em></font></h3><p><strong>树莓派入门到放弃之远程连接(remote-link)</strong></p><a id="more"></a><p>在树莓派不使用显示屏，或者在异地进行管理时，即可通过远程连接！<br>使用软件有<a href=""><font color="blue">VNC</font></a>or<a href=""><font color="green">putty</font></a>等进行远程连接操作树莓派，真是颇具极客风范！哈哈</p><p>如果大家有什么好的远程连接软件欢迎留言，一同~_~讨论!</p>]]></content>
     
@@ -58,7 +58,7 @@
     
       <category term="VNC" scheme="http://hltsir.club/tags/VNC/"/>
     
-      <category term="PUTYY" scheme="http://hltsir.club/tags/PUTYY/"/>
+      <category term="PUtty" scheme="http://hltsir.club/tags/PUtty/"/>
     
   </entry>
   
