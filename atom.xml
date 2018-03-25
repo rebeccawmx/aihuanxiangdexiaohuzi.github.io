@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://hltsir.club/"/>
-  <updated>2018-03-21T15:33:31.442Z</updated>
+  <updated>2018-03-25T15:52:14.788Z</updated>
   <id>http://hltsir.club/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>虚拟机(VM)常用操作记录</title>
+    <link href="http://hltsir.club/2018/03/25/%E8%99%9A%E6%8B%9F%E6%9C%BA-VM-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
+    <id>http://hltsir.club/2018/03/25/虚拟机-VM-常用操作记录/</id>
+    <published>2018-03-25T14:36:37.000Z</published>
+    <updated>2018-03-25T15:52:14.788Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="导读"><a href="#导读" class="headerlink" title="导读"></a><font color="red"><em>导读</em></font></h3><p>记录使用VM虚拟机时常用的操作</p><a id="more"></a><h3 id="vm-tools工具的安装-ubuntu16-04"><a href="#vm-tools工具的安装-ubuntu16-04" class="headerlink" title="vm-tools工具的安装(ubuntu16.04)"></a>vm-tools工具的安装(ubuntu16.04)</h3><ol><li>在vm软件中运行自己的系统</li><li>VM软件导航栏选择虚拟机点击安装VMware tools，之后在ubuntu中可看见cdrom挂载成功。</li><li>打开一个终端terminal进入cdrom<br><code>cd /media/VMware\ Tools/</code></li><li>复制压缩包到tmp目录解压 (xxxx代表你当前版本vm的tools，使用tab键可以自动补全)<br><code>cp VMware-xxxx.tar.gz /tmp</code><br><code>cd /tmp</code><br><code>tar -zcvf VMware-xxxx.tar.gz</code></li><li>进入解压文件中执行安装命令<br><code>cd vmware-tools-distrib/</code><br><code>./vmware-install.pl</code><br><font color="red">Tip:</font><br>如果是普通用户执行命令请在每条命令前加 sudo<br>执行./vmware-install.pl命令后会提示你有个开源vm-tools，问你是否继续安装本vm-tools默认参数是no，这里我们输入yes，继续安装，之后就一路enter就行了。<br>安装完成后，reboot重启一下系统<h3 id="安装vim"><a href="#安装vim" class="headerlink" title="安装vim"></a>安装vim</h3><code>sudo apt-get install vim</code><br>本人使用windows较多了，vi命令使用不太习惯，还是vim还能接受！！emmm<h3 id="修改源-如果下载慢或者无法链接的情况，请修改源试试"><a href="#修改源-如果下载慢或者无法链接的情况，请修改源试试" class="headerlink" title="修改源(如果下载慢或者无法链接的情况，请修改源试试)"></a>修改源(如果下载慢或者无法链接的情况，请修改源试试)</h3></li><li>查看自己系统版本代号<br><code>lsb_release -a</code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">No LSB modules are available.</span><br><span class="line">Distributor ID: Ubuntu</span><br><span class="line">Description:    Ubuntu 16.04.4 LTS</span><br><span class="line">Release:    16.04</span><br><span class="line">Codename:   xenial</span><br></pre></td></tr></table></figure></li></ol><p>其中Codename就是版本代号<br><code>cp /etc/apt/sources.list /etc/apt/sources.list.backup</code><br>网上搜索国内速度快的源如aliyun的，到服务器确认源存在<br>修改 主要是修改源地址 代号<br>如 <code>deb http://mirrors.sohu.com/ubuntu/ xenial main restricted</code>这样的<br>更新<br><code>sudo apt-get update</code><br>傻瓜式设置(有桌面系统)</p><ol><li>系统设置</li><li>软件和更新</li><li>下载自，选择其他站点 </li><li>选择最佳服务器，等待测试完成，确认<br><code>vim /etc/apt/source.list</code><br>可查看源镜像已更新成最快的了</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;导读&quot;&gt;&lt;a href=&quot;#导读&quot; class=&quot;headerlink&quot; title=&quot;导读&quot;&gt;&lt;/a&gt;&lt;font color=&quot;red&quot;&gt;&lt;em&gt;导读&lt;/em&gt;&lt;/font&gt;&lt;/h3&gt;&lt;p&gt;记录使用VM虚拟机时常用的操作&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="技巧" scheme="http://hltsir.club/categories/%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="VM虚拟机常用操作" scheme="http://hltsir.club/tags/VM%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>Raspberrypi入门到放弃系列学习之说明</title>
