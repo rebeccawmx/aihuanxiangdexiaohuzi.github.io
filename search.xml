@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[TensorFlow初体验]]></title>
+    <url>%2F2018%2F03%2F26%2FTensorFlow%E5%88%9D%E4%BD%93%E9%AA%8C%2F</url>
+    <content type="text"><![CDATA[导读TensorFlow初体验 下载与安装TensorFlow中文官网安装教程下载与安装本文根据上文步骤安装，提供以下注意事项系统：ubuntu16.04LTS安装方式：基于VirtualEnv安装(官方推荐方法，上文中前面的都不用看直接跳到这里)由于ubuntu16.04自带有python2.7和pytonn3.5 这里是个坑12sudo apt-get install python-pip python-dev python-virtualenv 安装的python2sudo apt-get install python3-pip python3-dev python3-virtualenv 安装的python3 建立虚拟环境 这里如果是用python3请指定python版本如下(关于如何切换python版本看参考)我就是因为开始没有指定，创建后默认使用python2的virtualenv --system-site-packages --python=python3 ~/tensorflowcd ~/tensorflow激活环境123source bin/activate # 如果使用 bashsource bin/activate.csh # 如果使用 csh(tensorflow)$ # 终端提示符应该发生变化 安装TensorFlow12(tensorflow)$ pip install --upgrade tensorflow 使用python2(tensorflow)$ pip3 install --upgrade tensorflow 使用python3 测试1234567891011$ python&gt;&gt;&gt; import tensorflow as tf&gt;&gt;&gt; hello = tf.constant(&apos;Hello, TensorFlow!&apos;)&gt;&gt;&gt; sess = tf.Session()&gt;&gt;&gt; print sess.run(hello)Hello, TensorFlow!&gt;&gt;&gt; a = tf.constant(10)&gt;&gt;&gt; b = tf.constant(32)&gt;&gt;&gt; print sess.run(a+b)42 如果没有报错，并且你打开python时显示的是你想用的版本说明安装成功退出环境deactivate 参考官方步骤virtualenv内安装TensorFlowUbuntu16.04切换python版本]]></content>
+      <categories>
+        <category>TensorFlow</category>
+      </categories>
+      <tags>
+        <tag>TensorFlow</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[虚拟机(VM)常用操作记录]]></title>
     <url>%2F2018%2F03%2F25%2F%E8%99%9A%E6%8B%9F%E6%9C%BA-VM-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95%2F</url>
-    <content type="text"><![CDATA[导读记录使用VM虚拟机时常用的操作 vm-tools工具的安装(ubuntu16.04) 在vm软件中运行自己的系统 VM软件导航栏选择虚拟机点击安装VMware tools，之后在ubuntu中可看见cdrom挂载成功。 打开一个终端terminal进入cdromcd /media/VMware\ Tools/ 复制压缩包到tmp目录解压 (xxxx代表你当前版本vm的tools，使用tab键可以自动补全)cp VMware-xxxx.tar.gz /tmpcd /tmptar -zcvf VMware-xxxx.tar.gz 进入解压文件中执行安装命令cd vmware-tools-distrib/./vmware-install.plTip:如果是普通用户执行命令请在每条命令前加 sudo执行./vmware-install.pl命令后会提示你有个开源vm-tools，问你是否继续安装本vm-tools默认参数是no，这里我们输入yes，继续安装，之后就一路enter就行了。安装完成后，reboot重启一下系统安装vimsudo apt-get install vim本人使用windows较多了，vi命令使用不太习惯，还是vim还能接受！！emmm修改源(如果下载慢或者无法链接的情况，请修改源试试) 查看自己系统版本代号lsb_release -a12345No LSB modules are available.Distributor ID: UbuntuDescription: Ubuntu 16.04.4 LTSRelease: 16.04Codename: xenial 其中Codename就是版本代号cp /etc/apt/sources.list /etc/apt/sources.list.backup网上搜索国内速度快的源如aliyun的，到服务器确认源存在修改 主要是修改源地址 代号如 deb http://mirrors.sohu.com/ubuntu/ xenial main restricted这样的更新sudo apt-get update傻瓜式设置(有桌面系统) 系统设置 软件和更新 下载自，选择其他站点 选择最佳服务器，等待测试完成，确认vim /etc/apt/source.list可查看源镜像已更新成最快的了]]></content>
+    <content type="text"><![CDATA[导读记录使用VM虚拟机时常用的操作 vm-tools工具的安装(ubuntu16.04) 在vm软件中运行自己的系统 VM软件导航栏选择虚拟机点击安装VMware tools，之后在ubuntu中可看见cdrom挂载成功。 打开一个终端terminal进入cdromcd /media/VMware\ Tools/ 复制压缩包到tmp目录解压 (xxxx代表你当前版本vm的tools，使用tab键可以自动补全)cp VMware-xxxx.tar.gz /tmpcd /tmptar -zcvf VMware-xxxx.tar.gz 进入解压文件中执行安装命令cd vmware-tools-distrib/./vmware-install.plTip:如果是普通用户执行命令请在每条命令前加 sudo执行./vmware-install.pl命令后会提示你有个开源vm-tools，问你是否继续安装本vm-tools默认参数是no，这里我们输入yes，继续安装，之后就一路enter就行了。安装完成后，reboot重启一下系统 VM设置 窗口自适应 VM软件-菜单栏-查看-自动调整大小-(自动适应客户机/自动适应窗口)选中，即可。 启动使用vm硬盘启动 VM软件-虚拟机-硬件-cd/dvd-连接使用物理驱动器-自动检测。 网络使用桥接模式 VM软件-虚拟机-硬件-网络适配器-桥接模式(这样虚拟机就有自己的独立ip地址了)(高级、VM软件-编辑-虚拟网络编辑器-更改设置-选择桥接的网卡pcie的是有线网卡，802.11的是无线网卡，根据自己的网络更改) 共享文件 VM软件-虚拟机-选项-共享文件夹-总是启用-添加（自己需要共享的文件夹）-启用此共享ubuntu中命令查看共享的windows文件夹cd /mnt/hgfs或者 文件-计算机-mnt-hgfs 查看共享的文件 安装vimsudo apt-get install vim本人使用windows较多了，vi命令使用不太习惯，还是vim还能接受！！emmm 修改源(如果下载慢或者无法链接的情况，请修改源试试) 查看自己系统版本代号lsb_release -a12345No LSB modules are available.Distributor ID: UbuntuDescription: Ubuntu 16.04.4 LTSRelease: 16.04Codename: xenial 其中Codename就是版本代号cp /etc/apt/sources.list /etc/apt/sources.list.backup网上搜索国内速度快的源如aliyun的，到服务器确认源存在修改 主要是修改源地址 代号如 deb http://mirrors.sohu.com/ubuntu/ xenial main restricted这样的更新sudo apt-get update傻瓜式设置(有桌面系统) 系统设置 软件和更新 下载自，选择其他站点 选择最佳服务器，等待测试完成，确认vim /etc/apt/source.list可查看源镜像已更新成最快的了 安装ssh服务apt-get install ssh 用于远程无界面访问 linux(ubuntu)常用命令12apt-get update 更新apt-get install --upgrade / apt-get upgrade 升级]]></content>
       <categories>
         <category>技巧</category>
       </categories>
@@ -14,7 +25,7 @@
   <entry>
     <title><![CDATA[Raspberrypi入门到放弃系列学习之说明]]></title>
     <url>%2F2018%2F03%2F19%2FRaspberrypi%E5%85%A5%E9%97%A8%E5%88%B0%E6%94%BE%E5%BC%83%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%AF%B4%E6%98%8E%2F</url>
-    <content type="text"><![CDATA[导读食用树莓派(Raspberrypi)入门到放弃索引表 这是索引表，迷路者的救赎这是索引表，迷路者的救赎这是索引表，迷路者的救赎重要的事情说三遍？？？ 链接: 树莓派官网 官方论坛 树莓派实验室 树莓派论坛 开源中国社区 说明 爱瞎折腾有错吗？？？树莓派入门到放弃学习总结，在此记录个人的学习心得，走过的一些坑，给广大的兴趣爱好者提供一丢丢没有那么专业的解答233 硬件平台必备： Raspberry pi 3 B+ 5V 2.5A DC TF卡 可选： 软件平台 Raspberry pi官方系统 RASPBIAN VNC，PuTTy 用于远程连接 索引表(迷途的羔羊) 可查看右侧文章目录导航Raspberry pi 3B+ 入手&amp;拆箱&amp;安装系统 Raspberry pi 配置]]></content>
+    <content type="text"><![CDATA[导读食用树莓派(Raspberrypi)入门到放弃索引表 这是索引表，迷路者的救赎这是索引表，迷路者的救赎这是索引表，迷路者的救赎重要的事情说三遍？？？ 链接: 树莓派官网 官方论坛 树莓派实验室 树莓派论坛 开源中国社区 说明 爱瞎折腾有错吗？？？树莓派入门到放弃学习总结，在此记录个人的学习心得，走过的一些坑，给广大的兴趣爱好者提供一丢丢没有那么专业的解答233 硬件平台必备： Raspberry pi 3 B+ 5V 2.5A DC TF卡 可选： 软件平台 Raspberry pi官方系统 RASPBIAN VNC，PuTTy 用于远程连接 索引表(迷途的羔羊) 可查看右侧文章目录导航Raspberry pi 3B+ 入手&amp;拆箱&amp;安装系统 Raspberry pi 配置虚拟机(VM)常用操作记录]]></content>
       <categories>
         <category>树莓派(Raspberrypi)</category>
       </categories>
