@@ -3,6 +3,47 @@
 
 
     
+    
+  <url>
+    <loc>http://hltsir.club/2018/03/25/%E8%99%9A%E6%8B%9F%E6%9C%BA-VM-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2018-03-31T14:28:52.975Z</lastmod>
+    <data>
+        <display>
+        <title>虚拟机(VM)常用操作记录</title>
+        <pubTime>2018-03-25T14:36:37.000Z</pubTime>
+        
+        <tag>VM虚拟机常用操作</tag>
+         
+         
+           
+             
+              <breadCrumb title="技巧" url="http://hltsir.club/categories/%E6%8A%80%E5%B7%A7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://hltsir.club/2018/03/31/ubuntu%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2018-03-31T14:28:51.265Z</lastmod>
+    <data>
+        <display>
+        <title>ubuntu常用技巧</title>
+        <pubTime>2018-03-31T13:37:06.000Z</pubTime>
+        
+        <tag>ubuntu</tag>
+         
+         
+           
+             
+              <breadCrumb title="Linux" url="http://hltsir.club/categories/Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
   <url>
     <loc>http://hltsir.club/2018/03/26/TensorFlow%E5%88%9D%E4%BD%93%E9%AA%8C/</loc>
     <lastmod>2018-03-26T15:39:44.243Z</lastmod>
@@ -17,26 +58,6 @@
            
              
               <breadCrumb title="TensorFlow" url="http://hltsir.club/categories/TensorFlow/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://hltsir.club/2018/03/25/%E8%99%9A%E6%8B%9F%E6%9C%BA-VM-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2018-03-26T14:42:49.488Z</lastmod>
-    <data>
-        <display>
-        <title>虚拟机(VM)常用操作记录</title>
-        <pubTime>2018-03-25T14:36:37.000Z</pubTime>
-        
-        <tag>VM虚拟机常用操作</tag>
-         
-         
-           
-             
-              <breadCrumb title="技巧" url="http://hltsir.club/categories/%E6%8A%80%E5%B7%A7/"/>
           
         </display>
     </data>
@@ -124,7 +145,6 @@
     </data>
     </url>
 
-    
     
     
     

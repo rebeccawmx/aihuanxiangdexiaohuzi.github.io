@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://hltsir.club/"/>
-  <updated>2018-03-26T15:39:44.243Z</updated>
+  <updated>2018-03-31T14:28:51.265Z</updated>
   <id>http://hltsir.club/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ubuntu常用技巧</title>
+    <link href="http://hltsir.club/2018/03/31/ubuntu%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    <id>http://hltsir.club/2018/03/31/ubuntu常用技巧/</id>
+    <published>2018-03-31T13:37:06.000Z</published>
+    <updated>2018-03-31T14:28:51.265Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="导读"><a href="#导读" class="headerlink" title="导读"></a><font color="red"><em>导读</em></font></h3><p>记录linux常用操作，软件的安装使用，优化等。。(主要以ubuntu17.10为例同时兼顾16.04lts版本,同时17.10版本还存在一些bug，在17没有正式长期支持版还是选择16版本，不过17版本变化还是挺大的gui更好了，使用更便捷了，等待17版本的正式发布吧！！)</p><a id="more"></a><p>ubuntu17.10版本更新了以前版本安装命令，更易于使用了，同时兼容以前版本<br>新版本安装命令 <code>sudo apt install xxxx</code><br>以前版本安装命令<code>sudo apt-get install xxxx</code><br>两种方式都可以使用(<font color="red">以下不同版本使用请对号入座</font>)</p><h3 id="开启root用户"><a href="#开启root用户" class="headerlink" title="开启root用户"></a>开启root用户</h3><p>ubuntu默认是没有开启root用户的，在terminal里面输入命令<br><code>sudo passwd root</code> 回车，然后输入两次密码显示<br><code>passwd: password updated successfully</code>说明成功开启了root用户<br>现在使用命令<code>su root</code> 然后输入刚才设置的密码，切换成root用户，如果要退出root,命令行输入<code>exit</code>或者<code>su xxxx</code>(xxxx代表你的普通用户名)就可以自由的切换了。</p><h3 id="python-idle"><a href="#python-idle" class="headerlink" title="python idle"></a>python idle</h3><p>ubuntu16.04版本自带python2.7.12和python3.5.2<br>ubuntu17.10版本自带python2.7.14和python3.6.3<br>使用python3.6版本的idle安装命令如下<br><code>sudo apt install idle-python3.6</code>or<br><code>sudo apt install idle</code> python原生ide，注意根据自己python版本修改<br>使用直接在terminal里输入<br><code>idle-python3.6</code>回车，就会打开界面</p><h3 id="修改源-如果下载慢或者无法链接的情况，请修改源试试"><a href="#修改源-如果下载慢或者无法链接的情况，请修改源试试" class="headerlink" title="修改源(如果下载慢或者无法链接的情况，请修改源试试)"></a>修改源(如果下载慢或者无法链接的情况，请修改源试试)</h3><ol><li>查看自己系统版本代号<br><code>lsb_release -a</code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">No LSB modules are available.</span><br><span class="line">Distributor ID: Ubuntu</span><br><span class="line">Description:    Ubuntu 16.04.4 LTS</span><br><span class="line">Release:    16.04</span><br><span class="line">Codename:   xenial</span><br></pre></td></tr></table></figure></li></ol><p>其中Codename就是版本代号<br><code>cp /etc/apt/sources.list /etc/apt/sources.list.backup</code><br>网上搜索国内速度快的源如aliyun的，到服务器确认源存在<br>修改 主要是修改源地址 代号<br>如 <code>deb http://mirrors.sohu.com/ubuntu/ xenial main restricted</code>这样的<br>更新<br><code>sudo apt-get update</code><br>傻瓜式设置(有桌面系统)</p><ol><li>系统设置</li><li>软件和更新</li><li>下载自，选择其他站点 </li><li>选择最佳服务器，等待测试完成，确认<br><code>vim /etc/apt/source.list</code><br>可查看源镜像已更新成最快的了</li></ol><h3 id="安装vim"><a href="#安装vim" class="headerlink" title="安装vim"></a>安装vim</h3><p><code>sudo apt-get install vim</code><br>本人使用windows较多了，vi命令使用不太习惯，还是vim还能接受！！emmm</p><h3 id="安装ssh服务"><a href="#安装ssh服务" class="headerlink" title="安装ssh服务"></a>安装ssh服务</h3><p><code>apt-get install ssh</code> 用于远程无界面访问</p><h3 id="linux-ubuntu-常用命令"><a href="#linux-ubuntu-常用命令" class="headerlink" title="linux(ubuntu)常用命令"></a>linux(ubuntu)常用命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get update 更新</span><br><span class="line">apt-get install --upgrade / apt-get upgrade 升级</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;导读&quot;&gt;&lt;a href=&quot;#导读&quot; class=&quot;headerlink&quot; title=&quot;导读&quot;&gt;&lt;/a&gt;&lt;font color=&quot;red&quot;&gt;&lt;em&gt;导读&lt;/em&gt;&lt;/font&gt;&lt;/h3&gt;&lt;p&gt;记录linux常用操作，软件的安装使用，优化等。。(主要以ubuntu17.10为例同时兼顾16.04lts版本,同时17.10版本还存在一些bug，在17没有正式长期支持版还是选择16版本，不过17版本变化还是挺大的gui更好了，使用更便捷了，等待17版本的正式发布吧！！)&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://hltsir.club/categories/Linux/"/>
+    
+    
+      <category term="ubuntu" scheme="http://hltsir.club/tags/ubuntu/"/>
+    
+  </entry>
   
   <entry>
     <title>TensorFlow初体验</title>
@@ -43,9 +65,9 @@
     <link href="http://hltsir.club/2018/03/25/%E8%99%9A%E6%8B%9F%E6%9C%BA-VM-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
     <id>http://hltsir.club/2018/03/25/虚拟机-VM-常用操作记录/</id>
     <published>2018-03-25T14:36:37.000Z</published>
-    <updated>2018-03-26T14:42:49.488Z</updated>
+    <updated>2018-03-31T14:28:52.975Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="导读"><a href="#导读" class="headerlink" title="导读"></a><font color="red"><em>导读</em></font></h3><p>记录使用VM虚拟机时常用的操作</p><a id="more"></a><h3 id="vm-tools工具的安装-ubuntu16-04"><a href="#vm-tools工具的安装-ubuntu16-04" class="headerlink" title="vm-tools工具的安装(ubuntu16.04)"></a>vm-tools工具的安装(ubuntu16.04)</h3><ol><li>在vm软件中运行自己的系统</li><li>VM软件导航栏选择虚拟机点击安装VMware tools，之后在ubuntu中可看见cdrom挂载成功。</li><li>打开一个终端terminal进入cdrom<br><code>cd /media/VMware\ Tools/</code></li><li>复制压缩包到tmp目录解压 (xxxx代表你当前版本vm的tools，使用tab键可以自动补全)<br><code>cp VMware-xxxx.tar.gz /tmp</code><br><code>cd /tmp</code><br><code>tar -zcvf VMware-xxxx.tar.gz</code></li><li>进入解压文件中执行安装命令<br><code>cd vmware-tools-distrib/</code><br><code>./vmware-install.pl</code><br><font color="red">Tip:</font><br>如果是普通用户执行命令请在每条命令前加 sudo<br>执行./vmware-install.pl命令后会提示你有个开源vm-tools，问你是否继续安装本vm-tools默认参数是no，这里我们输入yes，继续安装，之后就一路enter就行了。<br>安装完成后，reboot重启一下系统</li></ol><h3 id="VM设置"><a href="#VM设置" class="headerlink" title="VM设置"></a>VM设置</h3><ol><li>窗口自适应 VM软件-菜单栏-查看-自动调整大小-(自动适应客户机/自动适应窗口)选中，即可。</li><li>启动使用vm硬盘启动 VM软件-虚拟机-硬件-cd/dvd-连接使用物理驱动器-自动检测。</li><li>网络使用桥接模式 VM软件-虚拟机-硬件-网络适配器-桥接模式(这样虚拟机就有自己的独立ip地址了)(高级、VM软件-编辑-虚拟网络编辑器-更改设置-选择桥接的网卡pcie的是有线网卡，802.11的是无线网卡，根据自己的网络更改)</li><li>共享文件 VM软件-虚拟机-选项-共享文件夹-总是启用-添加（自己需要共享的文件夹）-启用此共享<br>ubuntu中命令查看共享的windows文件夹<br><code>cd /mnt/hgfs</code><br>或者 文件-计算机-mnt-hgfs 查看共享的文件</li></ol><h3 id="安装vim"><a href="#安装vim" class="headerlink" title="安装vim"></a>安装vim</h3><p><code>sudo apt-get install vim</code><br>本人使用windows较多了，vi命令使用不太习惯，还是vim还能接受！！emmm</p><h3 id="修改源-如果下载慢或者无法链接的情况，请修改源试试"><a href="#修改源-如果下载慢或者无法链接的情况，请修改源试试" class="headerlink" title="修改源(如果下载慢或者无法链接的情况，请修改源试试)"></a>修改源(如果下载慢或者无法链接的情况，请修改源试试)</h3><ol><li>查看自己系统版本代号<br><code>lsb_release -a</code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">No LSB modules are available.</span><br><span class="line">Distributor ID: Ubuntu</span><br><span class="line">Description:    Ubuntu 16.04.4 LTS</span><br><span class="line">Release:    16.04</span><br><span class="line">Codename:   xenial</span><br></pre></td></tr></table></figure></li></ol><p>其中Codename就是版本代号<br><code>cp /etc/apt/sources.list /etc/apt/sources.list.backup</code><br>网上搜索国内速度快的源如aliyun的，到服务器确认源存在<br>修改 主要是修改源地址 代号<br>如 <code>deb http://mirrors.sohu.com/ubuntu/ xenial main restricted</code>这样的<br>更新<br><code>sudo apt-get update</code><br>傻瓜式设置(有桌面系统)</p><ol><li>系统设置</li><li>软件和更新</li><li>下载自，选择其他站点 </li><li>选择最佳服务器，等待测试完成，确认<br><code>vim /etc/apt/source.list</code><br>可查看源镜像已更新成最快的了</li></ol><h3 id="安装ssh服务"><a href="#安装ssh服务" class="headerlink" title="安装ssh服务"></a>安装ssh服务</h3><p><code>apt-get install ssh</code> 用于远程无界面访问</p><h3 id="linux-ubuntu-常用命令"><a href="#linux-ubuntu-常用命令" class="headerlink" title="linux(ubuntu)常用命令"></a>linux(ubuntu)常用命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get update 更新</span><br><span class="line">apt-get install --upgrade / apt-get upgrade 升级</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h3 id="导读"><a href="#导读" class="headerlink" title="导读"></a><font color="red"><em>导读</em></font></h3><p>记录使用VM虚拟机时常用的操作</p><a id="more"></a><h3 id="vm-tools工具的安装-ubuntu16-04"><a href="#vm-tools工具的安装-ubuntu16-04" class="headerlink" title="vm-tools工具的安装(ubuntu16.04)"></a>vm-tools工具的安装(ubuntu16.04)</h3><ol><li>在vm软件中运行自己的系统</li><li>VM软件导航栏选择虚拟机点击安装VMware tools，之后在ubuntu中可看见cdrom挂载成功。</li><li>打开一个终端terminal进入cdrom<br><code>cd /media/VMware\ Tools/</code></li><li>复制压缩包到tmp目录解压 (xxxx代表你当前版本vm的tools，使用tab键可以自动补全)<br><code>cp VMware-xxxx.tar.gz /tmp</code><br><code>cd /tmp</code><br><code>tar -zcvf VMware-xxxx.tar.gz</code></li><li>进入解压文件中执行安装命令<br><code>cd vmware-tools-distrib/</code><br><code>./vmware-install.pl</code><br><font color="red">Tip:</font><br>如果是普通用户执行命令请在每条命令前加 sudo<br>执行./vmware-install.pl命令后会提示你有个开源vm-tools，问你是否继续安装本vm-tools默认参数是no，这里我们输入yes，继续安装，之后就一路enter就行了。<br>安装完成后，reboot重启一下系统</li></ol><h3 id="VM设置"><a href="#VM设置" class="headerlink" title="VM设置"></a>VM设置</h3><ol><li>窗口自适应 VM软件-菜单栏-查看-自动调整大小-(自动适应客户机/自动适应窗口)选中，即可。</li><li>启动使用vm硬盘启动 VM软件-虚拟机-硬件-cd/dvd-连接使用物理驱动器-自动检测。</li><li>网络使用桥接模式 VM软件-虚拟机-硬件-网络适配器-桥接模式(这样虚拟机就有自己的独立ip地址了)(高级、VM软件-编辑-虚拟网络编辑器-更改设置-选择桥接的网卡pcie的是有线网卡，802.11的是无线网卡，根据自己的网络更改)</li><li>共享文件 VM软件-虚拟机-选项-共享文件夹-总是启用-添加（自己需要共享的文件夹）-启用此共享<br>ubuntu中命令查看共享的windows文件夹<br><code>cd /mnt/hgfs</code><br>或者 文件-计算机-mnt-hgfs 查看共享的文件</li></ol>]]></content>
     
     <summary type="html">
     
