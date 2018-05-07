@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://hltsir.club/"/>
-  <updated>2018-03-31T14:28:51.265Z</updated>
+  <updated>2018-05-07T15:48:32.503Z</updated>
   <id>http://hltsir.club/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>把树莓派打造成服务器-宝塔</title>
+    <link href="http://hltsir.club/2018/05/07/%E6%8A%8A%E6%A0%91%E8%8E%93%E6%B4%BE%E6%89%93%E9%80%A0%E6%88%90%E6%9C%8D%E5%8A%A1%E5%99%A8-%E5%AE%9D%E5%A1%94/"/>
+    <id>http://hltsir.club/2018/05/07/把树莓派打造成服务器-宝塔/</id>
+    <published>2018-05-07T15:09:31.000Z</published>
+    <updated>2018-05-07T15:48:32.503Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="导读"><a href="#导读" class="headerlink" title="导读"></a><font color="red"><em>导读</em></font></h3><p>把树莓派打造成服务器，宝塔linux管理面板安装使用</p><a id="more"></a><ol><li>在安装宝塔前，请先更换国内源<br><code>sudo nano /etc/apt/source.list</code><br>本人更换如下<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#deb http://raspbian.raspberrypi.org/raspbian/ stretch main contrib non-free rpi</span><br><span class="line"># Uncomment line below then &apos;apt-get update&apos; to enable &apos;apt-get source&apos;</span><br><span class="line">#deb-src http://raspbian.raspberrypi.org/raspbian/ stretch main contrib non-fre$</span><br><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ stretch main contrib non-free rpi</span><br><span class="line">deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ stretch main contrib non-free rpi</span><br></pre></td></tr></table></figure></li></ol><p>保存，退出<br>输入<code>sudo apt update</code>更新</p><ol><li>打开<a href="https://www.bt.cn/download/linux.html" target="_blank" rel="noopener">宝塔官网</a>，选择linux面板，立即安装.<br>选择 Ubuntu/Deepin或者Debian安装命令都可以，在命令行输入<br><code>sudo wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh &amp;&amp; bash install.sh</code><br>将看到出错信息，显示不支持32位系统，解决<br><code>sudo nano install.sh</code><br>注释以下几行,检测系统位数<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#if [ &quot;$is64bit&quot; = &apos;32&apos; ];then</span><br><span class="line">#       echo &apos;=================================================&apos;;</span><br><span class="line">#       echo -e &quot;\033[31m BT-Panel Incompatible 32 bit OS. \033[0m&quot;;</span><br><span class="line">#       exit;</span><br><span class="line">#fi</span><br></pre></td></tr></table></figure></li></ol><p>保存，退出<br>执行命令<br><code>sudo bash install.sh</code><br>输入y，回车等待安装成功<br>3.浏览器输入树莓派ip：8888<br>输入用户名：admin 密码：安装成功时显示的密码登录，安装推荐软件，建议编译安装即可使用了。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;导读&quot;&gt;&lt;a href=&quot;#导读&quot; class=&quot;headerlink&quot; title=&quot;导读&quot;&gt;&lt;/a&gt;&lt;font color=&quot;red&quot;&gt;&lt;em&gt;导读&lt;/em&gt;&lt;/font&gt;&lt;/h3&gt;&lt;p&gt;把树莓派打造成服务器，宝塔linux管理面板安装使用&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="树莓派(Raspberrypi)" scheme="http://hltsir.club/categories/%E6%A0%91%E8%8E%93%E6%B4%BE-Raspberrypi/"/>
+    
+    
+      <category term="树莓派服务器 宝塔" scheme="http://hltsir.club/tags/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%9C%8D%E5%8A%A1%E5%99%A8-%E5%AE%9D%E5%A1%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Raspberry pi 3B+ 入手&amp;新手初探</title>
+    <link href="http://hltsir.club/2018/05/07/Raspberry-pi-3B-%E5%85%A5%E6%89%8B-%E6%96%B0%E6%89%8B%E5%88%9D%E6%8E%A2/"/>
+    <id>http://hltsir.club/2018/05/07/Raspberry-pi-3B-入手-新手初探/</id>
+    <published>2018-05-07T13:40:55.000Z</published>
+    <updated>2018-05-07T15:00:55.320Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="导读"><a href="#导读" class="headerlink" title="导读"></a><font color="red"><em>导读</em></font></h3><p>等了我两个月的树莓派3B+终于是到了，现在就跟我一起去探索树莓派的奥秘吧！</p><a id="more"></a><h3 id="测试平台"><a href="#测试平台" class="headerlink" title="测试平台"></a><font color="red">测试平台</font></h3><ul><li>Raspberrypi3B+一台</li><li>网线一根</li><li>电脑一台(安装了windows系统)</li><li>SD卡8G或者更大</li><li>putty远程连接软件</li><li>格式sd卡和写镜像软件</li></ul><h3 id="说明："><a href="#说明：" class="headerlink" title="说明："></a><font color="red">说明：</font></h3><p>此测试是在没有路由器，没有显示器，没有鼠标，没有键盘，只有一台树莓派和一台笔记本电脑的情况下进行的，（ps：我的网线是连接在交换机上的，交换机的进网口可能来自于路由器，但是我是不可使用的，就像从别人家牵了一根网线的情况。）如果有，甚好。</p><p>作为一个刚拿到树莓派3B+的你一定很激动，想马上开机，倒腾一番。哈哈别急跟着我一步步操作。</p><h3 id="1-下载系统"><a href="#1-下载系统" class="headerlink" title="1. 下载系统"></a>1. 下载系统</h3><p>打开官网<a href="https://www.raspberrypi.org/" target="_blank" rel="noopener">Raspberrypi</a>,点击DOWNLOADS，点击NooBS旁边的RASPBIAN,然后点击RASPBIAN STRETCH WITH DESKTOP下面的Download ZIP，这里推荐用迅雷之类的下载软件，如果你的浏览器下载很快，请无视推荐。下载好了之后解压。</p><h3 id="2-格式化SD卡-amp-写入系统"><a href="#2-格式化SD卡-amp-写入系统" class="headerlink" title="2.格式化SD卡&amp;写入系统"></a>2.格式化SD卡&amp;写入系统</h3><p>使用到的软件为<br><a href="https://www.sdcard.org/downloads/formatter_4/eula_windows/index.html" target="_blank" rel="noopener">SD Association</a><br>Win32diskimager</p><ol><li>首先把sd卡插入读卡器，插上电脑，等待系统识别，右键用管理员权限打开SD Association 选中你的sd卡，只有一个的话默认选中，点击format，等待完成后退出。</li><li>同样的，管理员权限打开Win32diskimager，选择好刚才下载解压了的image文件，还有设备是否是你的sd卡，后点击写入。等待完成。<br>以上步骤如果没有出错，现在你的windows系统，显示的是你的sd卡为一个boot和一个加密的盘符。打开boot盘符，新建一个名字为ssh的空白文件，这是因为新系统默认关闭了ssh的，这么做，是为了开启ssh，以便我们登陆。</li></ol><h3 id="3-ssh登陆树莓派"><a href="#3-ssh登陆树莓派" class="headerlink" title="3.ssh登陆树莓派"></a>3.ssh登陆树莓派</h3><p>在windows中按WIn+R键，打开运行输入cmd回车，输入命令<br><code>arp -a</code><br>现在把sd卡插入树莓派，上电开机，等待一下再次输入上面的命令<br>比较一下，可以看出会多一个动态ip，那就是树莓派局域网ip。<br>打开putty软件，输入树莓派的ip地址回车<br>没有报错的话输入用户名pi 密码raspberry 即可登录成功</p><p><font color="red">参考</font>：<br><a href="https://www.zhihu.com/question/20764621" target="_blank" rel="noopener">这里干货较多，请仔细品味，多多实践</a><br><a href="http://shumeipai.nxez.com/2017/02/27/raspbian-ssh-connection-refused.html" target="_blank" rel="noopener">树莓派新系统SSH连接被拒绝的解决方法</a><br><a href=""><font color="red">以上所涉及的软件备用下载地址请点这里</font></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;导读&quot;&gt;&lt;a href=&quot;#导读&quot; class=&quot;headerlink&quot; title=&quot;导读&quot;&gt;&lt;/a&gt;&lt;font color=&quot;red&quot;&gt;&lt;em&gt;导读&lt;/em&gt;&lt;/font&gt;&lt;/h3&gt;&lt;p&gt;等了我两个月的树莓派3B+终于是到了，现在就跟我一起去探索树莓派的奥秘吧！&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="树莓派(Raspberrypi)" scheme="http://hltsir.club/categories/%E6%A0%91%E8%8E%93%E6%B4%BE-Raspberrypi/"/>
+    
+    
+      <category term="Raspberrypi3B+ 新手入门" scheme="http://hltsir.club/tags/Raspberrypi3B-%E6%96%B0%E6%89%8B%E5%85%A5%E9%97%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>ubuntu常用技巧</title>
@@ -87,9 +131,9 @@
     <link href="http://hltsir.club/2018/03/19/Raspberrypi%E5%85%A5%E9%97%A8%E5%88%B0%E6%94%BE%E5%BC%83%E7%B3%BB%E5%88%97%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%AF%B4%E6%98%8E/"/>
     <id>http://hltsir.club/2018/03/19/Raspberrypi入门到放弃系列学习之说明/</id>
     <published>2018-03-19T14:41:12.000Z</published>
-    <updated>2018-03-26T12:23:54.448Z</updated>
+    <updated>2018-05-07T14:51:47.852Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="导读"><a href="#导读" class="headerlink" title="导读"></a><font color="red"><em>导读</em></font></h3><p><strong><font color="green">食用树莓派(Raspberrypi)入门到放弃索引表</font></strong></p><a id="more"></a><h4 id="这是索引表，迷路者的救赎"><a href="#这是索引表，迷路者的救赎" class="headerlink" title="这是索引表，迷路者的救赎"></a><font color="red" size="4">这是索引表，迷路者的救赎</font></h4><h4 id="这是索引表，迷路者的救赎-1"><a href="#这是索引表，迷路者的救赎-1" class="headerlink" title="这是索引表，迷路者的救赎"></a><font color="red" size="4">这是索引表，迷路者的救赎</font></h4><h4 id="这是索引表，迷路者的救赎-2"><a href="#这是索引表，迷路者的救赎-2" class="headerlink" title="这是索引表，迷路者的救赎"></a><font color="red" size="4">这是索引表，迷路者的救赎</font></h4><p><strong><font color="red " size="3">重要的事情说三遍？？？</font></strong></p><h3 id="链接-树莓派官网"><a href="#链接-树莓派官网" class="headerlink" title="链接: 树莓派官网"></a>链接: <a href="https://www.raspberrypi.org/" target="_blank" rel="noopener">树莓派官网</a></h3><ul><li><a href="https://www.raspberrypi.org/forums/" target="_blank" rel="noopener">官方论坛</a></li><li><a href="http://shumeipai.nxez.com/" target="_blank" rel="noopener">树莓派实验室</a></li><li><a href="http://www.shumeipai.net/portal.php" target="_blank" rel="noopener">树莓派论坛</a></li><li><a href="https://www.oschina.net/p/raspberrypi" target="_blank" rel="noopener">开源中国社区</a></li></ul><h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a><font color="red " size="4">说明</font></h3><blockquote><p><em>爱瞎折腾有错吗？？？树莓派入门到放弃学习总结，在此记录个人的学习心得，走过的一些坑，给广大的兴趣爱好者提供一丢丢没有那么专业的解答233</em></p></blockquote><h3 id="硬件平台"><a href="#硬件平台" class="headerlink" title="硬件平台"></a><font color="blue">硬件平台</font></h3><h4 id="必备："><a href="#必备：" class="headerlink" title="必备："></a>必备：</h4><ul><li>Raspberry pi 3 B+</li><li>5V 2.5A DC</li><li>TF卡</li></ul><h4 id="可选："><a href="#可选：" class="headerlink" title="可选："></a>可选：</h4><ul><li></li><li></li></ul><h3 id="软件平台"><a href="#软件平台" class="headerlink" title="软件平台"></a><font color="blue">软件平台</font></h3><ul><li>Raspberry pi官方系统 <a href="https://www.raspberrypi.org/downloads/raspbian/" target="_blank" rel="noopener"><strong>RASPBIAN</strong></a></li><li><a href="https://www.realvnc.com/en/" target="_blank" rel="noopener">VNC</a>，<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" target="_blank" rel="noopener">PuTTy</a> 用于远程连接</li></ul><h3 id="索引表-迷途的羔羊"><a href="#索引表-迷途的羔羊" class="headerlink" title="索引表(迷途的羔羊)"></a><font color="red " size="5">索引表(<font color="red" size="3">迷途的羔羊)</font></font></h3><ul><li>可查看右侧文章目录导航<h4 id="Raspberry-pi-3B-入手-amp-拆箱-amp-安装系统"><a href="#Raspberry-pi-3B-入手-amp-拆箱-amp-安装系统" class="headerlink" title="Raspberry pi 3B+ 入手&amp;拆箱&amp;安装系统 "></a><a href="">Raspberry pi 3B+ 入手&amp;拆箱&amp;安装系统 </a></h4><h4 id="Raspberry-pi-配置"><a href="#Raspberry-pi-配置" class="headerlink" title="Raspberry pi 配置"></a><a href="">Raspberry pi 配置</a></h4><h4 id="虚拟机-VM-常用操作记录"><a href="#虚拟机-VM-常用操作记录" class="headerlink" title="虚拟机(VM)常用操作记录"></a><a href="">虚拟机(VM)常用操作记录</a></h4></li></ul>]]></content>
+    <content type="html"><![CDATA[<h3 id="导读"><a href="#导读" class="headerlink" title="导读"></a><font color="red"><em>导读</em></font></h3><p><strong><font color="green">食用树莓派(Raspberrypi)入门到放弃索引表</font></strong></p><a id="more"></a><h4 id="这是索引表，迷路者的救赎"><a href="#这是索引表，迷路者的救赎" class="headerlink" title="这是索引表，迷路者的救赎"></a><font color="red" size="4">这是索引表，迷路者的救赎</font></h4><h4 id="这是索引表，迷路者的救赎-1"><a href="#这是索引表，迷路者的救赎-1" class="headerlink" title="这是索引表，迷路者的救赎"></a><font color="red" size="4">这是索引表，迷路者的救赎</font></h4><h4 id="这是索引表，迷路者的救赎-2"><a href="#这是索引表，迷路者的救赎-2" class="headerlink" title="这是索引表，迷路者的救赎"></a><font color="red" size="4">这是索引表，迷路者的救赎</font></h4><p><strong><font color="red " size="3">重要的事情说三遍？？？</font></strong></p><h3 id="链接-树莓派官网"><a href="#链接-树莓派官网" class="headerlink" title="链接: 树莓派官网"></a>链接: <a href="https://www.raspberrypi.org/" target="_blank" rel="noopener">树莓派官网</a></h3><ul><li><a href="https://www.raspberrypi.org/forums/" target="_blank" rel="noopener">官方论坛</a></li><li><a href="http://shumeipai.nxez.com/" target="_blank" rel="noopener">树莓派实验室</a></li><li><a href="http://www.shumeipai.net/portal.php" target="_blank" rel="noopener">树莓派论坛</a></li><li><a href="https://www.oschina.net/p/raspberrypi" target="_blank" rel="noopener">开源中国社区</a></li></ul><h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a><font color="red " size="4">说明</font></h3><blockquote><p><em>爱瞎折腾有错吗？？？树莓派入门到放弃学习总结，在此记录个人的学习心得，走过的一些坑，给广大的兴趣爱好者提供一丢丢没有那么专业的解答233</em></p></blockquote><h3 id="硬件平台"><a href="#硬件平台" class="headerlink" title="硬件平台"></a><font color="blue">硬件平台</font></h3><h4 id="必备："><a href="#必备：" class="headerlink" title="必备："></a>必备：</h4><ul><li>Raspberry pi 3 B+</li><li>5V 2.5A DC</li><li>TF卡</li></ul><h4 id="可选："><a href="#可选：" class="headerlink" title="可选："></a>可选：</h4><ul><li></li><li></li></ul><h3 id="软件平台"><a href="#软件平台" class="headerlink" title="软件平台"></a><font color="blue">软件平台</font></h3><ul><li>Raspberry pi官方系统 <a href="https://www.raspberrypi.org/downloads/raspbian/" target="_blank" rel="noopener"><strong>RASPBIAN</strong></a></li><li><a href="https://www.realvnc.com/en/" target="_blank" rel="noopener">VNC</a>，<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" target="_blank" rel="noopener">PuTTy</a> 用于远程连接</li></ul><h3 id="索引表-迷途的羔羊"><a href="#索引表-迷途的羔羊" class="headerlink" title="索引表(迷途的羔羊)"></a><font color="red " size="5">索引表(<font color="red" size="3">迷途的羔羊)</font></font></h3><ul><li>可查看右侧文章目录导航<h4 id="Raspberry-pi-3B-入手-amp-新手初探"><a href="#Raspberry-pi-3B-入手-amp-新手初探" class="headerlink" title="Raspberry pi 3B+ 入手&amp;新手初探 "></a><a href="">Raspberry pi 3B+ 入手&amp;新手初探 </a></h4><h4 id="Raspberry-pi-配置"><a href="#Raspberry-pi-配置" class="headerlink" title="Raspberry pi 配置"></a><a href="">Raspberry pi 配置</a></h4><h4 id="虚拟机-VM-常用操作记录"><a href="#虚拟机-VM-常用操作记录" class="headerlink" title="虚拟机(VM)常用操作记录"></a><a href="">虚拟机(VM)常用操作记录</a></h4></li></ul>]]></content>
     
     <summary type="html">
     
