@@ -98,7 +98,7 @@
 <meta property="og:site_name" content="Moustache">
 <meta property="og:description" content="导读等了我两个月的树莓派3B+终于是到了，现在就跟我一起去探索树莓派的奥秘吧！">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-17T13:24:43.258Z">
+<meta property="og:updated_time" content="2018-05-20T15:22:27.303Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Raspberry pi 3B+ 入手&amp;新手初探">
 <meta name="twitter:description" content="导读等了我两个月的树莓派3B+终于是到了，现在就跟我一起去探索树莓派的奥秘吧！">
@@ -355,8 +355,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-05-17T21:24:43+08:00">
-                2018-05-17
+              <time title="更新于" itemprop="dateModified" datetime="2018-05-20T23:22:27+08:00">
+                2018-05-20
               </time>
             
           </span>
@@ -428,7 +428,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,708
+                  1,704
                 </span>
               
 
@@ -486,7 +486,7 @@
 <h3 id="ssh登陆树莓派"><a href="#ssh登陆树莓派" class="headerlink" title="ssh登陆树莓派"></a>ssh登陆树莓派</h3><p>在windows中按WIn+R键，打开运行输入cmd回车，输入命令<br><code>arp -a</code><br>现在把sd卡插入树莓派，上电开机，等待一下再次输入上面的命令<br>比较一下，可以看出会多一个动态ip，那就是树莓派局域网ip。<br>打开putty软件，输入树莓派的ip地址回车<br>没有报错的话输入用户名pi 密码raspberry 即可登录成功</p>
 <h3 id="扩展sd卡文件系统"><a href="#扩展sd卡文件系统" class="headerlink" title="扩展sd卡文件系统"></a>扩展sd卡文件系统</h3><p><code>sudo raspi-config</code><br>回车后，选择Advanced Options-&gt;Expand Filesystem 确定，然后重启生效。</p>
 <h3 id="修改初始密码-amp-开启root账户"><a href="#修改初始密码-amp-开启root账户" class="headerlink" title="修改初始密码&amp;开启root账户"></a>修改初始密码&amp;开启root账户</h3><p>这个根据个人情况而定，因为不想看到ssh总是提示我使用的是默认密码。<br>直接在命令行里输入<br><code>passwd</code><br>回车后，会提示你输入原来的密码，就是raspberry，然后输入两次新的密码即可。<br>使用命令<br><code>sudo passwd root</code><br>回车，然后输入两次新密码，即可开启root账户。<br>切换账户，使用su xxx命令如：<br><code>su root</code><br>回车，输入root密码即可进入root账户，退出一个已经的登录的账户只需要输入<br><code>exit</code><br>即可</p>
-<h3 id="更换国内的源"><a href="#更换国内的源" class="headerlink" title="更换国内的源"></a>更换国内的源</h3><p>在全球互联网的时代(不包括中国)，你需要用一些手段，跟上时代的步伐！<br><code>sudo nano /etc/apt/source.list</code><br>本人更换如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#deb http://raspbian.raspberrypi.org/raspbian/ stretch main contrib non-free rpi</span><br><span class="line"># Uncomment line below then &apos;apt-get update&apos; to enable &apos;apt-get source&apos;</span><br><span class="line">#deb-src http://raspbian.raspberrypi.org/raspbian/ stretch main contrib non-fre$</span><br><span class="line">deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free rpi</span><br><span class="line">deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free rpi</span><br></pre></td></tr></table></figure></p>
+<h3 id="更换国内的源"><a href="#更换国内的源" class="headerlink" title="更换国内的源"></a>更换国内的源</h3><p>在全球互联网的时代(不包括中国)，你需要用一些手段，跟上时代的步伐！<br><code>sudo nano /etc/apt/sources.list</code><br>本人更换如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free rpi</span><br><span class="line">deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main contrib non-free rpi</span><br><span class="line">deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ stretch main contrib non-free rpi</span><br><span class="line">deb-src  http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ stretch main contrib non-free rpi</span><br></pre></td></tr></table></figure></p>
 <p>保存，退出<br>输入<code>sudo apt update</code>更新<br>如果遇到输入上面的指令后报W:failed to …..的警告，请更换其他国内源试试，可能是有些源没有及时更新导致</p>
 <p><font color="red">参考</font>：<a href="https://blog.csdn.net/qq_31324613/article/details/78198484" target="_blank" rel="noopener">树莓派最新raspbian系统换国内源</a></p>
 <h3 id="更正本地时间"><a href="#更正本地时间" class="headerlink" title="更正本地时间"></a>更正本地时间</h3><p>树莓派默认是使用UTC国际时区的<br><code>sudo raspi-config</code><br>回车，选择Localisation Options-&gt;Change Timezone-&gt;Asia-&gt;Shanghai回车Finish完成，然后输入命令：<br><code>date</code><br>可看到已经更正为本地时间CST<br><code>Sun 13 May 20:02:51 CST 2018</code></p>
@@ -494,7 +494,7 @@
 <h3 id="3B-开启wifi需选择国家"><a href="#3B-开启wifi需选择国家" class="headerlink" title="3B+开启wifi需选择国家"></a>3B+开启wifi需选择国家</h3><p>ssh登录3B+时会提示wifi使能需要选择国家<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Wi-Fi is disabled because the country is not set.</span><br><span class="line">Use raspi-config to set the country before use.</span><br></pre></td></tr></table></figure></p>
 <p>输入命令<br><code>sudo raspi-config</code><br>回车，选择Localisation Options-&gt;Change Wi-fi Country-&gt;CN China回车确认，Finish重启</p>
 <h3 id="树莓派做wifi-ap热点"><a href="#树莓派做wifi-ap热点" class="headerlink" title="树莓派做wifi ap热点"></a>树莓派做wifi ap热点</h3><p>树莓派建立wifi热点后，手机，电脑随时都可以连接，方便。步骤如下</p>
-<p>1.进入你想安装的目录，执行命令<br><code>git clone https://github.com/oblique/create_ap.git</code><br>2.进入目录<br><code>cd create_ap</code><br>3.安装<br><code>sudo make install</code><br>4.接下来安装依赖库<br><code>sudo apt-get install util-linux procps hostapd iproute2 iw haveged dnsmasq</code><br>5.接下来保证你的网线插在pi3上并且能上网就行了。输入下面的命令启动无线AP：<br><code>sudo create_ap wlan0 eth0 热点名 密码</code><br>6.开启开机启动<br>把5步骤的命令加入/etc/rc.local中,在<code>exit 0</code>前面加入<br><code>sudo nano /etc/rc.local</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Print the IP address</span><br><span class="line">_IP=$(hostname -I) || true</span><br><span class="line">if [ &quot;$_IP&quot; ]; then</span><br><span class="line">  printf &quot;My IP address is %s\n&quot; &quot;$_IP&quot;</span><br><span class="line">fi</span><br><span class="line">sudo create_ap wlan0 eth0 pi3b+ hulintao1314</span><br><span class="line">exit 0</span><br></pre></td></tr></table></figure></p>
+<p>1.进入你想安装的目录，执行命令<br><code>git clone https://github.com/oblique/create_ap.git</code><br>2.进入目录<br><code>cd create_ap</code><br>3.安装<br><code>sudo make install</code><br>4.接下来安装依赖库<br><code>sudo apt-get install util-linux procps hostapd iproute2 iw haveged dnsmasq</code><br>5.接下来保证你的网线插在pi3上并且能上网就行了。输入下面的命令启动无线AP：<br><code>sudo create_ap wlan0 eth0 热点名 密码</code><br>6.开启开机启动<br>把5步骤的命令加入/etc/rc.local中,在<code>exit 0</code>前面加入<br><code>sudo nano /etc/rc.local</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Print the IP address</span><br><span class="line">_IP=$(hostname -I) || true</span><br><span class="line">if [ &quot;$_IP&quot; ]; then</span><br><span class="line">  printf &quot;My IP address is %s\n&quot; &quot;$_IP&quot;</span><br><span class="line">fi</span><br><span class="line">sudo create_ap wlan0 eth0 热点名 密码</span><br><span class="line">exit 0</span><br></pre></td></tr></table></figure></p>
 <p>更多使用方法参考<a href="https://github.com/oblique/create_ap" target="_blank" rel="noopener">github</a></p>
 <p><font color="red">参考</font>：<a href="http://tieba.baidu.com/p/4502615344" target="_blank" rel="noopener">树莓派3用create_ap变身无线AP，非常简单，推荐大家使用！</a></p>
 <h3 id="树莓派常用更新指令"><a href="#树莓派常用更新指令" class="headerlink" title="树莓派常用更新指令"></a>树莓派常用更新指令</h3><ol>
