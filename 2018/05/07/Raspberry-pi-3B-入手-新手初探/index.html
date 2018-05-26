@@ -98,7 +98,7 @@
 <meta property="og:site_name" content="Moustache">
 <meta property="og:description" content="导读等了我两个月的树莓派3B+终于是到了，现在就跟我一起去探索树莓派的奥秘吧！">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-21T15:26:58.744Z">
+<meta property="og:updated_time" content="2018-05-26T15:30:41.857Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Raspberry pi 3B+ 入手&amp;新手初探">
 <meta name="twitter:description" content="导读等了我两个月的树莓派3B+终于是到了，现在就跟我一起去探索树莓派的奥秘吧！">
@@ -355,8 +355,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-05-21T23:26:58+08:00">
-                2018-05-21
+              <time title="更新于" itemprop="dateModified" datetime="2018-05-26T23:30:41+08:00">
+                2018-05-26
               </time>
             
           </span>
@@ -428,7 +428,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,786
+                  1,825
                 </span>
               
 
@@ -468,7 +468,7 @@
         <h3 id="导读"><a href="#导读" class="headerlink" title="导读"></a><font color="red"><em>导读</em></font></h3><p>等了我两个月的树莓派3B+终于是到了，现在就跟我一起去探索树莓派的奥秘吧！</p>
 <a id="more"></a>
 <h3 id="测试平台"><a href="#测试平台" class="headerlink" title="测试平台"></a><font color="red">测试平台</font></h3><ul>
-<li>Raspberrypi3B+一台</li>
+<li>Raspberrypi3B+一台/3B</li>
 <li>网线一根</li>
 <li>电脑一台(安装了windows系统)</li>
 <li>SD卡8G或者更大</li>
@@ -476,6 +476,7 @@
 <li>格式sd卡和写镜像软件</li>
 </ul>
 <h3 id="说明："><a href="#说明：" class="headerlink" title="说明："></a><font color="red">说明：</font></h3><p>此测试是在没有路由器，没有显示器，没有鼠标，没有键盘，只有一台树莓派和一台笔记本电脑的情况下进行的，（ps：我的网线是连接在交换机上的，交换机的进网口可能来自于路由器，但是我是不可使用的，就像从别人家牵了一根网线的情况。）如果有，甚好。</p>
+<p>以下教程同样适用3B，如有不同之处，我会指出。</p>
 <p>作为一个刚拿到树莓派3B+的你一定很激动，想马上开机，倒腾一番。哈哈别急跟着我一步步操作。<br><strong>小技巧</strong><br><code>在使用基于linux的系统中，请擅用你的Tab键(补全功能)，在命令行下，使用tab键不仅可以提高你的工作效率，还能减少输入命令的错误次数，可谓小白的必备良药。按一次tab，按两次tab等有不同的效果。</code></p>
 <h3 id="下载系统"><a href="#下载系统" class="headerlink" title="下载系统"></a>下载系统</h3><p>打开官网<a href="https://www.raspberrypi.org/" target="_blank" rel="noopener">Raspberrypi</a>,点击DOWNLOADS，点击NooBS旁边的RASPBIAN,然后点击RASPBIAN STRETCH WITH DESKTOP下面的Download ZIP，这里推荐用迅雷之类的下载软件，如果你的浏览器下载很快，请无视推荐。下载好了之后解压。</p>
 <h3 id="格式化SD卡-amp-写入系统"><a href="#格式化SD卡-amp-写入系统" class="headerlink" title="格式化SD卡&amp;写入系统"></a>格式化SD卡&amp;写入系统</h3><p>使用到的软件为<br><a href="https://www.sdcard.org/downloads/formatter_4/eula_windows/index.html" target="_blank" rel="noopener">SD Association</a><br>Win32diskimager</p>
@@ -501,7 +502,7 @@
 <li>sudo apt update 更新</li>
 <li>sudo apt upgrade 升级</li>
 <li>sudo apt dist-upgrade 依赖性升级</li>
-<li>sudo rpi-update 固件库升级<br>依次执行上面的命令，遇到y/n直接回车<br>执行第4个命令时，请先更换国内源，避免无法下载，如遇EOF文件结尾，重新执行一次命令。<h3 id="树莓派常用指令，基于linux命令"><a href="#树莓派常用指令，基于linux命令" class="headerlink" title="树莓派常用指令，基于linux命令"></a>树莓派常用指令，基于linux命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update /upgrade /dist-update /rpi-update 更新的一些指令</span><br><span class="line">sudo raspi-config 树莓派配置界面</span><br><span class="line">ifconfig 显示网卡信息</span><br><span class="line">uname -a 显示系统版本</span><br><span class="line">lscpu 简单显示cpu信息</span><br><span class="line">lsusb / lsusb -tv 显示usb设备</span><br><span class="line">cat /proc/cpuinfo 显示cpu信息</span><br><span class="line">sudo nano /etc/apt/sources.list 编辑源</span><br><span class="line">gpio -v 显示gpio版本信息</span><br><span class="line">gpio readall 显示gpio详细信息</span><br><span class="line">sudo shutdown now  关机</span><br><span class="line">sudo reboot 重启</span><br></pre></td></tr></table></figure>
+<li>sudo rpi-update 固件库升级<br>依次执行上面的命令，遇到y/n直接回车<br>执行第4个命令时，请先更换国内源，避免无法下载，如遇EOF文件结尾，重新执行一次命令。<h3 id="树莓派常用指令，基于linux命令"><a href="#树莓派常用指令，基于linux命令" class="headerlink" title="树莓派常用指令，基于linux命令"></a>树莓派常用指令，基于linux命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update /upgrade /dist-update /rpi-update 更新的一些指令</span><br><span class="line">sudo raspi-config 树莓派配置界面</span><br><span class="line">ifconfig 显示网卡信息</span><br><span class="line">uname -a 显示系统版本</span><br><span class="line">lscpu 简单显示cpu信息</span><br><span class="line">lsusb / lsusb -tv 显示usb设备</span><br><span class="line">cat /proc/cpuinfo 显示cpu信息</span><br><span class="line">sudo nano /etc/apt/sources.list 编辑源</span><br><span class="line">gpio -v 显示gpio版本信息</span><br><span class="line">gpio readall 显示gpio详细信息</span><br><span class="line">ps -ef |grep xxx 显示xxx服务/软件是否在后台运行</span><br><span class="line">sudo shutdown now  关机</span><br><span class="line">sudo reboot 重启</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <p><font color="red">参考</font>：<a href="https://blog.csdn.net/tiankongtiankong01/article/details/53869975" target="_blank" rel="noopener">树莓派系统、硬件更新</a></p>
@@ -688,7 +689,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -710,7 +711,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -808,7 +809,7 @@
     
       <span class="post-meta-item-text">网站总字数&#58;</span>
     
-    <span title="网站总字数">5.9k</span>
+    <span title="网站总字数">6.3k</span>
   
 </div>
 
