@@ -98,7 +98,7 @@
 <meta property="og:site_name" content="Moustache">
 <meta property="og:description" content="导读安装常用软件及服务，让树莓派变得强大起来！！^^">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-12T15:05:46.083Z">
+<meta property="og:updated_time" content="2018-06-12T15:08:00.422Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="树莓派常用软件&amp;服务安装">
 <meta name="twitter:description" content="导读安装常用软件及服务，让树莓派变得强大起来！！^^">
@@ -355,7 +355,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-06-12T23:05:46+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-06-12T23:08:00+08:00">
                 2018-06-12
               </time>
             
@@ -428,7 +428,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  520
+                  699
                 </span>
               
 
@@ -444,7 +444,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -473,8 +473,10 @@
 <h3 id="mplayer-命令行播放音乐"><a href="#mplayer-命令行播放音乐" class="headerlink" title="mplayer 命令行播放音乐"></a>mplayer 命令行播放音乐</h3><p>本人使用树莓派外接一个音响，没有使用图形界面，用的远程操作的。</p>
 <ol>
 <li>安装mplayer音乐播放软件<br><code>sudo apt install mplayer</code><br>回车等待安装成功</li>
-<li>使用<br><code>mplayer xxx.mp3</code>(xxx 为你的歌曲名)<br>当然你也可以使用<br><code>mplayer *.mp3</code><br>批量播放以.mp3结尾的音频文件<br>使用上面的命令是，确定是在音频文件夹里使用的命令，否则得使用绝对路径<br>使用小快捷<br>9/0 音量加/音量减<br>↑/↓ 快进/快退<br>←/→ 慢进/慢退<br>Enter 下一首<br>q 退出<br>空格/p 暂停</li>
+<li>使用<br><code>mplayer xxx.mp3</code>(xxx 为你的歌曲名)<br>当然你也可以使用<br><code>mplayer *.mp3</code><br>批量播放以.mp3结尾的音频文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">pi@raspberrypi:~/Music $ mplayer *.mp3</span><br><span class="line">MPlayer 1.3.0 (Debian), built with gcc-6.2.1 (C) 2000-2016 MPlayer Team</span><br><span class="line">do_connect: could not connect to socket</span><br><span class="line">connect: No such file or directory</span><br><span class="line">Failed to open LIRC support. You will not be able to use your remote control.</span><br><span class="line"></span><br><span class="line">Playing 7obu - Tobu - Life.mp3.</span><br><span class="line">libavformat version 57.56.101 (external)</span><br><span class="line">Mismatching header version 57.56.100</span><br><span class="line">Audio only file format detected.</span><br><span class="line">Load subtitles in ./</span><br><span class="line">==========================================================================</span><br><span class="line">Opening audio decoder: [mpg123] MPEG 1.0/2.0/2.5 layers I, II, III</span><br><span class="line">AUDIO: 44100 Hz, 2 ch, s16le, 320.0 kbit/22.68% (ratio: 40000-&gt;176400)</span><br><span class="line">Selected audio codec: [mpg123] afm: mpg123 (MPEG 1.0/2.0/2.5 layers I, II, III)</span><br><span class="line">==========================================================================</span><br><span class="line">AO: [pulse] Init failed: Connection refused</span><br><span class="line">Failed to initialize audio driver &apos;pulse&apos;</span><br><span class="line">AO: [alsa] 44100Hz 2ch s16le (2 bytes per sample)</span><br><span class="line">Video: no video</span><br><span class="line">Starting playback...</span><br><span class="line">A:   7.1 (07.1) of 204.0 (03:24.0)  3.1%</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
+<p>使用上面的命令是，确定是在音频文件夹里使用的命令，否则得使用绝对路径<br>使用小快捷<br>9/0 音量加/音量减<br>↑/↓ 快进/快退<br>←/→ 慢进/慢退<br>Enter 下一首<br>q 退出<br>空格/p 暂停</p>
 <p>mplayer的强大之处在于除了可以播放音频文件，还可以播放视频文件，操作方法和播放音频文件一样的，但是要看到视频，你需要一块屏幕，或者用vnc远程。更多操作查看help</p>
 
       
@@ -778,7 +780,7 @@
     
       <span class="post-meta-item-text">网站总字数&#58;</span>
     
-    <span title="网站总字数">6.6k</span>
+    <span title="网站总字数">6.8k</span>
   
 </div>
 
