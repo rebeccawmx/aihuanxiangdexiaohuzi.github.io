@@ -11,5 +11,5 @@ Disallow:  /fonts/
 Disallow:  /vendors/
 Disallow:  /fancybox/
 
-Sitemap:  http://hltsir.club/sitemap.xml
-Sitemap:  http://hltsir.club/baidusitemap.xml
+Sitemap:  http://hltsir.top/sitemap.xml
+Sitemap:  http://hltsir.top/baidusitemap.xml
