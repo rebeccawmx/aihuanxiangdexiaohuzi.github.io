@@ -103,7 +103,10 @@
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7263391-2d6ad4d160e7bece.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7263391-cf4685d564faef34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7263391-e1e522cf694c3302.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-08-14T14:28:12.631Z">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7263391-af622dfa43ec95f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7263391-8e4c2f04635dd5be.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7263391-49026c77815d36d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-08-22T12:38:12.125Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="树莓派公网访问">
 <meta name="twitter:description" content="导读使用路由器无线桥接模式打通树莓派外网访问">
@@ -361,8 +364,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-08-14T22:28:12+08:00">
-                2018-08-14
+              <time title="更新于" itemprop="dateModified" datetime="2018-08-22T20:38:12+08:00">
+                2018-08-22
               </time>
             
           </span>
@@ -434,7 +437,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  478
+                  952
                 </span>
               
 
@@ -450,7 +453,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -496,8 +499,11 @@
 </ul>
 <p><img src="https://upload-images.jianshu.io/upload_images/7263391-cf4685d564faef34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="tp路由器显示IP修改成功.png"></p>
 <p><img src="https://upload-images.jianshu.io/upload_images/7263391-e1e522cf694c3302.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="主路由器网关信息.png"></p>
-<p>设置树莓派为静态IP地址<br><code>sudo nano /etc/dhcpcd.conf</code><br>打开DHCP配置文件<br>修改成如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">interface eth0</span><br><span class="line">static  ip_address=你想要的ip地址/24</span><br><span class="line">static routers=你的路由器lan口IP(注意现在你的路由器是光猫，默认lan是192.168.1.1)</span><br><span class="line">staic domain_name_servers=路由器lan口IP 114.114.114.114 （这里后面还有可以保持不变）</span><br></pre></td></tr></table></figure></p>
+<h4 id="设置树莓派为静态IP地址"><a href="#设置树莓派为静态IP地址" class="headerlink" title="设置树莓派为静态IP地址"></a>设置树莓派为静态IP地址</h4><p><code>sudo nano /etc/dhcpcd.conf</code><br>打开DHCP配置文件<br>修改成如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">interface eth0</span><br><span class="line">static  ip_address=你想要的ip地址/24</span><br><span class="line">static routers=你的路由器lan口IP(注意现在你的路由器是光猫，默认lan是192.168.1.1)</span><br><span class="line">staic domain_name_servers=路由器lan口IP 114.114.114.114 （这里后面还有可以保持不变）</span><br></pre></td></tr></table></figure></p>
 <p>主要修改上面的上3点，可以新建内容修改，也可以就在原来位置修改，只需要把前面的#注释符号去除修改后面的ip就可以了。</p>
+<h4 id="获取公网ip"><a href="#获取公网ip" class="headerlink" title="获取公网ip"></a>获取公网ip</h4><p>公网ip电信用户只需要给10000打电话转人工，让他帮你改成公网IP，就行了（其他网络不知道）<br>在光猫管理界面的网关信息栏可以看到你的wlanIP即你的公网ip</p>
+<h4 id="连接测试"><a href="#连接测试" class="headerlink" title="连接测试"></a>连接测试</h4><p>在树莓派上最好装上php，方便测试。这里推荐安装树莓派实验室的这个帖子<a href="http://shumeipai.nxez.com/2018/04/25/install-pi-dashboard-with-nginx-php7-on-pi.html" target="_blank" rel="noopener">树莓派安装 Nginx + PHP7.0 + Pi Dashboard</a>,也可以看到树莓派的一些信息。<br>如果你安装了上面帖子的php，并且能运行，你现在要做的就是修改监听端口<br><code>sudo nano /etc/nginx/sites-available/default</code><br>把默认的80端口改成你喜欢的端口，比如6666等，不要与一些通用端口相同即可。保存退出<br><code>sudo service nginx restart</code><br>重启一下nginx服务<br>打开天翼网关-&gt;高级设置-&gt;端口映射<br><img src="https://upload-images.jianshu.io/upload_images/7263391-af622dfa43ec95f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="端口映射设置.png"><br>修改成你的信息，内部端口就是你nginx刚才设置的监听端口，外部端口随便设置，<br>设置好了，就可以在浏览器里输入<br><code>公网IP:外部端口/pi-dashboard/</code><br>这样就可以访问到你的树莓派信息面板了<br><img src="https://upload-images.jianshu.io/upload_images/7263391-8e4c2f04635dd5be.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="树莓派连接成功.png"><br>通过手机用数据流量再来测试一下是否通过公网ip访问的</p>
+<h4 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h4><p>这里是高级部分，如果觉得每次通过ip地址访问很麻烦，可以尝试买个域名，通过域名访问。<br>域名购买，实名认证什么的都跳过了，用万网，阿里旗下的审核速度都挺快的，现在主要讲一下，域名解析部分<br><img src="https://upload-images.jianshu.io/upload_images/7263391-49026c77815d36d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="域名解析设置.png"><br>可以按照我的模式填写你的信息（这里我其实推荐使用dnspod解析域名，dnspod带免费监控，而阿里需要购买）<br>绑定好就可以通过域名来访问了<br><a href="http://www.hltsir.xyz:7777/pi-dashboard" target="_blank" rel="noopener">我的树莓派dashboard</a> <a href="http://www.hltsir.xyz:7777/pi-dashboard/" target="_blank" rel="noopener">http://www.hltsir.xyz:7777/pi-dashboard/</a></p>
 
       
     </div>
@@ -770,7 +776,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#导读"><span class="nav-number">1.</span> <span class="nav-text">导读</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#本文情景"><span class="nav-number">1.1.</span> <span class="nav-text">本文情景:</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#基本思路"><span class="nav-number">1.1.1.</span> <span class="nav-text">基本思路:</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#步骤"><span class="nav-number">1.2.</span> <span class="nav-text">步骤</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#导读"><span class="nav-number">1.</span> <span class="nav-text">导读</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#本文情景"><span class="nav-number">1.1.</span> <span class="nav-text">本文情景:</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#基本思路"><span class="nav-number">1.1.1.</span> <span class="nav-text">基本思路:</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#步骤"><span class="nav-number">1.2.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置树莓派为静态IP地址"><span class="nav-number">1.3.</span> <span class="nav-text">设置树莓派为静态IP地址</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取公网ip"><span class="nav-number">1.4.</span> <span class="nav-text">获取公网ip</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#连接测试"><span class="nav-number">1.5.</span> <span class="nav-text">连接测试</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#绑定域名"><span class="nav-number">1.6.</span> <span class="nav-text">绑定域名</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -804,7 +810,7 @@
     
       <span class="post-meta-item-text">网站总字数&#58;</span>
     
-    <span title="网站总字数">8.4k</span>
+    <span title="网站总字数">8.8k</span>
   
 </div>
 
